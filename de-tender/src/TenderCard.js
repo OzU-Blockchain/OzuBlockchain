@@ -1,14 +1,27 @@
-import App from "./App";
+
 import React from "react";
 
- const TenderCard = () => {
-    return (<div> <h2> Mercedes-Benz E-180</h2></div>);
+function TenderCard({title, description, date, year, km, color, Area}) {
+  
+    return ( 
+    <>
+    
+   <div>{title}</div>
+    <div>{description}</div>
+    <div>{date}</div>  
+    <div>{year}</div>
+    <div>{km}</div>
+    <div>{color}</div>
+    <div>{Area}</div>
+    
+    </>
+    );
+  
+    
+ 
 }
-
-export default TenderCard;
-
         
-            
+export default TenderCard;  
             
         
         
