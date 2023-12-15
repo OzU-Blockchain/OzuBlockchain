@@ -1,12 +1,12 @@
 
 import React from 'react';
-import {ihale_kartlari} from './ihale_kartlari';
+import TenderCard from './TenderCard';
 
 function App() {
   return (
     
     <div> 
-    <ihale_kartlari/> 
+    <TenderCard></TenderCard>
     <h1> İhaleler</h1> 
     </div>
   );
