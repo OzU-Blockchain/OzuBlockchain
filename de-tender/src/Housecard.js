@@ -1,7 +1,7 @@
-
+import App from "./App";
 import React from "react";
 
-function TenderCard({props}) {
+function HouseCard({props}) {
   
     return ( 
     <>
@@ -10,9 +10,7 @@ function TenderCard({props}) {
     <div>{props.description}</div>
     <div>{props.date}</div>  
     <div>{props.year}</div>
-    <div>{props.km}</div>
-    <div>{props.color}</div>
-    <div>{props.Area}</div>
+    <div>{props.Area}</div>     
     <div>{props.img}</div>
     </div>
    
@@ -20,15 +18,10 @@ function TenderCard({props}) {
     </>
     );
   
+
+    
     
  
 }
-        
-export default TenderCard;  
-            
-        
-        
-   
-    
-   
 
+export default HouseCard;
