@@ -15,7 +15,7 @@ import kadikoy from './images/kadikoy.jpg';
 import cankaya from './images/cankaya.jpg';
 import beykoz from './images/beykoz.jpg';
 const ethers = require ("ethers");
-
+import Stakepage from './Stakepage';
 
 function App() {
   // let all_cards = [HouseCard,AreaCard,CarCard];
@@ -50,6 +50,7 @@ function App() {
   }
 
   return (
+    <React.Fragment>
     <div className='main'>
       <div className='navbar'>
         <h1> İhaleler</h1>
@@ -162,6 +163,12 @@ function App() {
         />
       </div>
     </div>
+
+    <Stakepage>
+
+    </Stakepage>
+
+    </React.Fragment>
 
 
   );
