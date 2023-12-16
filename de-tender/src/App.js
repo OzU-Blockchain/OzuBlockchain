@@ -1,6 +1,5 @@
-
-import React from 'react';
-
+import './App.css';
+import React, { useState, useEffect } from 'react';
 import mercedes from './images/mercedes.jpeg';
 import arnavutkoy from './images/arnavutkoy.png';
 import linea from './images/linea.jpg';
@@ -13,43 +12,57 @@ import HouseCard from './Housecard';
 import AreaCard from './Areacard';
 import isuzu from './images/isuzu.jpg';
 import kadikoy from './images/kadikoy.jpg';
+import cankaya from './images/cankaya.jpg';
+import beykoz from './images/beykoz.jpg';
 
 
 
-async function App() {
+ function App() { 
+  // let all_cards = [HouseCard,AreaCard,CarCard];
+
+    const [Listing, setListing] = useState([]);
+  
+    useEffect(() => {
+      const fetchData = async () => {
+        const response = await fetch('http://localhost:3000/');
+        const json = await response.json();
+        setListing(json);
+      };
+  
+      fetchData();
+    }, []);
+
+
+
   return (
     
-    <div className='App.js'> 
-      <img src={mercedes} alt="mercedes" width="100" height="100"></img>
-      <img src={arnavutkoy} alt="arnavutkoy" width="100" height="100"></img>
-      <img src={linea} alt='linea' width="100" height="100"></img>
-      <img src={umraniye} alt='umraniye' width="100" height="100"></img>
-      <img src={bmw} alt='bmw' width="100" height="100"></img> 
-      <img src={audi} alt='audi' width="100" height="100"></img>
-      <img src={cerkezkoy} alt='cerkezkoy' width="100" height="100"></img>
-      <img src={isuzu} alt='isuzu' width="100" height="100"></img>  
-      <img src={kadikoy} alt='kadikoy' width="100" height="100"></img>  
+    <div className="App"> 
+    
+      
+      
+      
 
-    <CarCard></CarCard>
-    <HouseCard> </HouseCard>
-    <AreaCard> </AreaCard>
-    <h1> İhaleler</h1> 
+      <h1> İhaleler</h1> 
+    
+    
     <CarCard
-    img={mercedes}
+    
     title="2018 model Mercedes marka E200 icradan satılıktır "
     description="İhale No: 287348521"
     date="İhale Tarihi: 16.12.2023"
     year="2018"
     km="100.000"
     color="Gri"
+    img= {mercedes}
     />
-    <AreaCard
+    
+     <AreaCard
     img={arnavutkoy}
     title= "İstanbul Arnavutköy'de 2980 m2 arsa mahkemeden satılıktır"
     description="İhale No: 287348521"
     Area="Arsa Alanı: 2980 m2"
     />
-    <TenderCard
+    <CarCard
     img={linea}
     title="İlkadım belediyesine ait 4 adet araç açık arttırma ile satışa çıkacaktır"
     description="İhale No: 28743221"
@@ -108,17 +121,27 @@ async function App() {
     Area="Daire Alanı: 150 m2"
     />
     <AreaCard
-    img={kadikoy}
+    img={beykoz}
     title="İstanbul Beykoz'da 5000 m2 arsa ihaleden satılıktır" 
     description="İhale No: 287348521"
     Area="Arsa Alanı: 5000 m2"
     date="İhale Tarihi: 16.12.2023"
-    
+    />
+    <HouseCard
+    img={cankaya}
+    title="Ankara Çankaya'de 4+1 daire icradan satılıktır"
+    description="İhale No: 287952521"
+    date="İhale Tarihi: 16.12.2023"
+    year="2010"
+    Area="Daire Alanı: 200 m2"
     
     />
 
+   
+
     
-    </div>
+    </div> 
+    
   );
 }
 

@@ -1,17 +1,21 @@
-import App from "./App";
+
 import React from "react";
 
-function AreaCard({props}) {
+const AreaCard=(props)=> {
   
     return ( 
     <>
-    <div style={{display:"flex",flexDirection:"column"}}>
+    {/* <div style={{display:"flex",flexDirection:"column"}}> */}
         <div>{props.title}</div>
     <div>{props.description}</div>
     <div>{props.date}</div>  
     <div>{props.img}</div>
     <div>{props.Area}</div>
-    </div>
+    <img src={props.img} alt="arnavutkoy" width="100" height="100"></img>
+      
+      
+    <img src={props.img} alt='cerkezkoy' width="100" height="100"></img>
+    {/* </div> */}
    
     
     </>
