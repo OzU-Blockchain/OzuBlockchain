@@ -1,0 +1,31 @@
+.mainphoto{
+    background-color: black;
+    height:600px;
+    width: auto;
+    background-image:  url("~/public/edevlet.webp") ;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainbutton:hover{
+    background-color: aliceblue;
+}
+
+.maintext{
+    font-size: 30px;
+    font-weight:700;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0.9;
+    letter-spacing: 0.5px;
+    color: aliceblue;
+}
+
+.edevletimg img{
+    margin-top: 12px;
+    height: 60px;
+    width: auto;
+    margin-right: 600px;
+}
+

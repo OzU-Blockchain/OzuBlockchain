@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Stakepage from "./Stakepage"
 import {
   createBrowserRouter,
   RouterProvider,
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
 
   {
     path: "/stake",
-    element:<App /> ,
+    element:<Stakepage/> ,
   },
 ]);
 
