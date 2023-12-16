@@ -2,7 +2,8 @@
 import React from 'react';
 import TenderCard from './TenderCard';
 
-function App() {
+
+async function App() {
   return (
     
     <div> 
