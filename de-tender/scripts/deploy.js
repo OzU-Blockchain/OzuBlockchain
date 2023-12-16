@@ -8,7 +8,7 @@ const hre = require("hardhat");
 const { ethers } = require("hardhat");
 
 async function main() {
-  const HelloFactory = await ethers.getContractFactory("Hello");
+  const HelloFactory = await ethers.getContractFactory("Auction");
   const hellomessage = await HelloFactory.deploy("Has been deployed");
   await hellomessage.deployed();
   console.log("kerem")
