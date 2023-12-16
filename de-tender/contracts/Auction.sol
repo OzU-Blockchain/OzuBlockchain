@@ -14,8 +14,8 @@ pragma solidity ^0.8.9;
     ) external;
 }*/
 
-contract Auction {
-    event Start();
+contract Auction{
+    event Start()
     event End(address highestBidder, uint highestBid);
     event Bid(address indexed sender, uint amount);
     event Withdraw(address indexed bidder, uint amount);

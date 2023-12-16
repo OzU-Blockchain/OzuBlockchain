@@ -1,5 +1,6 @@
 
 import React from "react";
+import JoinTenderB from "./JoinTenderB";
 
 const CarCard = (props) => {
 
@@ -14,7 +15,8 @@ const CarCard = (props) => {
                 <div>{props.year}</div>
                 <div>{props.km}</div>
                 <div>{props.color}</div>
-                <img src={props.img} alt="mercedes" width="100" height="100"></img>
+                <img src={props.img} alt="mercedes" width="auto" height="150" style={{borderRadius:"20px"}}></img>
+                <JoinTenderB/>
             </div>
 
 

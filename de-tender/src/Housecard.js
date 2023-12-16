@@ -1,5 +1,6 @@
 
 import React from "react";
+import JoinTenderB from "./JoinTenderB";
 
 const HouseCard = (props) => {
 
@@ -12,16 +13,10 @@ const HouseCard = (props) => {
                 <div>{props.date}</div>
                 <div>{props.year}</div>
                 <div>{props.Area}</div>
-                <img src={props.img} alt='kadikoy' width="100" height="100"></img>
+                <img src={props.img} alt='kadikoy' width="auto" height="150" style={{borderRadius:"20px"}}></img>
+                <JoinTenderB></JoinTenderB>
             </div>
-
-
-
-
-
             {/* </div> */}
-
-
         </>
     );
 

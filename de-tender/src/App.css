@@ -1,7 +1,7 @@
 .card{
     border: 1px solid;
     margin: 50px;
-    height: 300px;
+    height: auto;
     width: 300px;
     position: relative;
     display: flex;
@@ -43,7 +43,7 @@ button{
     border-radius: 20px;
     float: right;
     color: aliceblue;
-    background-color: #1c375a;
+    background-color: #e30a17;
     opacity: 0.8;
     justify-content: center;
     align-items: center;
@@ -59,8 +59,8 @@ button{
 
 button:hover{
     background-color: transparent;
-    color: #1c375a;
+    color: #e30a17;
     transition: 0.2s;
     font-weight: 400;
-    border:2px solid #1c375a; 
+    border:2px solid #e30a17; 
 }
