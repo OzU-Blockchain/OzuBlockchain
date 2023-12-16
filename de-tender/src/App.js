@@ -15,7 +15,8 @@ import isuzu from './images/isuzu.jpg';
 import kadikoy from './images/kadikoy.jpg';
 
 
-function App() {
+
+async function App() {
   return (
     
     <div className='App.js'> 
