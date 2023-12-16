@@ -1,6 +1,6 @@
 
 import React from 'react';
-import TenderCard from './TenderCard';
+
 import mercedes from './images/mercedes.jpeg';
 import arnavutkoy from './images/arnavutkoy.png';
 import linea from './images/linea.jpg';
@@ -11,7 +11,7 @@ import cerkezkoy from './images/cerkezkoy.jpg';
 import CarCard from './Carcard';
 import HouseCard from './Housecard';
 import AreaCard from './Areacard';
-import isuzu from './images/isuz.jpg';
+import isuzu from './images/isuzu.jpg';
 import kadikoy from './images/kadikoy.jpg';
 
 
@@ -29,7 +29,9 @@ function App() {
       <img src={isuzu} alt='isuzu' width="100" height="100"></img>  
       <img src={kadikoy} alt='kadikoy' width="100" height="100"></img>  
 
-    <TenderCard></TenderCard>
+    <CarCard></CarCard>
+    <HouseCard> </HouseCard>
+    <AreaCard> </AreaCard>
     <h1> İhaleler</h1> 
     <CarCard
     img={mercedes}
@@ -105,10 +107,12 @@ function App() {
     Area="Daire Alanı: 150 m2"
     />
     <AreaCard
+    img={kadikoy}
     title="İstanbul Beykoz'da 5000 m2 arsa ihaleden satılıktır" 
     description="İhale No: 287348521"
     Area="Arsa Alanı: 5000 m2"
     date="İhale Tarihi: 16.12.2023"
+    
     
     />
 
