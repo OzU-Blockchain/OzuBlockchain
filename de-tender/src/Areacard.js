@@ -14,7 +14,7 @@ const AreaCard=(props)=> {
     <img src={props.img} alt="arnavutkoy" width="100" height="100"></img>
       
       
-    <img src={props.img} alt='cerkezkoy' width="100" height="100"></img>
+    
     {/* </div> */}
    
     
