@@ -4,18 +4,17 @@ pragma solidity ^0.8.9;
 // Uncomment this line to use console.log
 // import "hardhat/console.sol";
 
-/*interface IERC721 {
+interface IERC721 {
     function transfer(address, uint) external;
-
     function transferFrom(
         address,
         address,
         uint
     ) external;
-}*/
+}
 
 contract Auction{
-    event Start()
+    event Start();
     event End(address highestBidder, uint highestBid);
     event Bid(address indexed sender, uint amount);
     event Withdraw(address indexed bidder, uint amount);
