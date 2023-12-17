@@ -8,11 +8,15 @@ const hre = require("hardhat");
 const { ethers } = require("ethers");
 
 async function main() {
-  const HelloFactory = await ethers.getContractFactory("Auction");
+ /* const HelloFactory = await ethers.getContractFactory("Auction");
   const hellomessage = await HelloFactory.deploy("Has been deployed");
   await hellomessage.deployed();
   console.log("kerem")
-  console.log("Contract deployed to:",hellomessage.address);
+  console.log("Contract deployed to:",hellomessage.address);*/
+
+  const Stake = await ethers.getContractFactory("Stake");
+  const stake = await Stake.deploy();
+  await stake.deployed();
   
 }
 

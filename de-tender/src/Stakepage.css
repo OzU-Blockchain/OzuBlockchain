@@ -6,7 +6,7 @@
     display: flex;
     justify-content:center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .mainbutton:hover{
@@ -26,6 +26,25 @@
     margin-top: 12px;
     height: 60px;
     width: auto;
-    margin-right: 600px;
+    
 }
 
+.container1{
+    justify-content:end;
+    align-items: baseline;
+    height: 400px;
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+
+.container2{
+    justify-content:end;
+    align-items: baseline;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+}

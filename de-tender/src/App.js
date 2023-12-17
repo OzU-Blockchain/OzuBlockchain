@@ -54,12 +54,13 @@ function App() {
     <React.Fragment>
       <div className='main'>
         <div className='navbar'>
-          <h1 style={{marginLeft:"40px",color:"#e30a17"}}><Link to="/" style={{textDecoration:"none"}} >İhaleler</Link></h1>
-          <h1 style={{paddingRight:"800px",color:"#e30a17"}}><Link to="/stake" style={{textDecoration:"none"}} color='#e30a17'>Teminat</Link></h1>
+        <div className="edevletimg"><img src="edevlet.png" alt="" style={{ display: "block" }} /></div>
+                <h1 style={{ marginLeft: "40px", color: "#e30a17" }}><Link to="/" style={{ textDecoration: "none" }} >İhaleler</Link></h1>
+                <h1 style={{ paddingRight: "0px", color: "#e30a17" }}><Link to="/stake" style={{ textDecoration: "none" }} color='#e30a17'>Teminat</Link></h1>
           <button onClick={() => {
             if (account) return;
             connect();
-          }}>{account ? "Connected" : "Connect Account"}</button>
+          }}>{account ? "Bağlı" : "Cüzdan Bağla"}</button>
         </div>
         <div className="App">
           <CarCard

@@ -1,13 +1,15 @@
+// SPDX-License-Identifier:UNLICENSED
+pragma solidity ^0.8.9;
+
 contract Stake {
     address public owner;
     uint256 public immutable stakingDuration; // Stake süresi (örneğin, bir ay)
     mapping(address => uint256) public stakedBalances;
     mapping(address => uint256) public stakingTimestamp;
-    mapping(address => uint256) public rewards;
 
     event Staked(address indexed staker, uint256 amount);
     event Unstaked(address indexed staker, uint256 amount);
-    event RewardClaimed(address indexed staker, uint256 amount);
+    
 
     modifier onlyOwner() {
         require(msg.sender == owner, "Only the owner can call this function");
