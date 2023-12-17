@@ -1,11 +1,13 @@
-.maindiv{
+.maindiv1{
     height: 500px;
     width: auto;
     margin: 10px 150px;
-    background-color: aqua;
+    background-color: transparent;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     border-radius: 20px;
+    border: #e30a17 1px solid;
 }
 .container11{
     height: 150px;
@@ -17,5 +19,12 @@
 .time{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+}
+
+h1{
+    padding:10px 30px;
+    color: #e30a17;
+}
+h3{
+    color:#e30a17 ;
 }

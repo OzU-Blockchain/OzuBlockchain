@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Link } from "react-router-dom";
 import "./TenderPage.css"
 import { ethers } from "ethers";
-
+import mercedes from './images/mercedes.jpeg';
 const TenderPage = () => {
     const [account, setAccount] = useState("");
     const [provider, setProvider] = useState(null);
@@ -33,7 +33,7 @@ const TenderPage = () => {
                     connect();
                 }}>{account ? "Bağlı" : "Cüzdan Bağla"}</button>
             </div>
-            <div className="maindiv">
+            <div className="maindiv1">
                 <div className="container11">
                     <div className="time">
                         <h1>
@@ -43,10 +43,13 @@ const TenderPage = () => {
                             4 Saat 15 Dakika 20 Saniye
                         </h1>
                     </div>
-                    <div className="photo"><img src="" alt="" /></div>
+                    <img src={mercedes} alt="" style={{height:"400px", width:"400px",marginLeft:"100px", borderRadius:"20px"}} />
+                    <button>Teklif Ver</button>
                 </div>
-                <div>
-dsas
+                <div style={{display:"flex", flexDirection:"column",marginTop:"30px"}}>
+                    <h3>Muhammen Bedel : 1.400.00,00TL</h3>
+                    <h3>Arttırma başlangış tarih ve saati : 17.12.2023 07.09</h3>
+                    <h3>Arttırma bitiş tarih ve saati :24.12.2023 07.09</h3>
                 </div>
             </div>
         </React.Fragment>
