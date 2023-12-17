@@ -1,0 +1,21 @@
+.maindiv{
+    height: 500px;
+    width: auto;
+    margin: 10px 150px;
+    background-color: aqua;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+.container11{
+    height: 150px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

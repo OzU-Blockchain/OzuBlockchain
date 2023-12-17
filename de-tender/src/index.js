@@ -8,6 +8,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import TenderPage from './TenderPage';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/stake",
     element:<Stakepage/> ,
+  },
+  {
+    path: "/tender",
+    element:<TenderPage/> ,
   },
 ]);
 
